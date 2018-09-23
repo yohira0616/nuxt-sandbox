@@ -5,6 +5,7 @@
         <v-ons-toolbar>
           <div class="center">Title</div>
         </v-ons-toolbar>
+        <HelloWorld></HelloWorld>
 
       </v-ons-page>
     </no-ssr>
