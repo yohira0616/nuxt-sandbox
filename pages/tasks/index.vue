@@ -1,14 +1,12 @@
 <template>
   <div>
-    <no-ssr>
-      <v-ons-page>
-        <v-ons-toolbar>
-          <div class="center">Title</div>
-        </v-ons-toolbar>
-        <HelloWorld></HelloWorld>
+    <v-ons-page>
+      <v-ons-toolbar>
+        <div class="center">Hello,OnsenUI!</div>
+      </v-ons-toolbar>
+      <HelloWorld></HelloWorld>
 
-      </v-ons-page>
-    </no-ssr>
+    </v-ons-page>
   </div>
 </template>
 
