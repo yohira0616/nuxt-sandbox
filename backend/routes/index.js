@@ -9,9 +9,9 @@ router.get('/', function (req, res, next) {
     console.log(tasks)
     console.log(tasks[0].id)
     console.log(tasks[0].name)
-  })
+    res.json(tasks)
 
-  res.render('index', {title: 'Express'});
+  })
 });
 
 module.exports = router;
