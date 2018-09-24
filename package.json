@@ -5,7 +5,7 @@
   "author": "yukito ohira <yukito.sys.so@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt -s",
+    "dev": "PORT=8080 nuxt -s",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "nuxt": "^1.0.0",
     "onsenui": "^2.10.4",
     "vue-onsenui": "^2.6.1"

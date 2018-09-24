@@ -7,6 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const cors = require('cors');
+
 var app = express();
 app.listen(3001,()=>{
   console.log('port 3001 express works...')
@@ -21,6 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

@@ -15,6 +15,7 @@
   // Webpack CSS import
   import 'onsenui/css/onsenui.css';
   import 'onsenui/css/onsen-css-components.css';
+  import axios from 'axios'
 
   // JS import
   import Vue from 'vue';
@@ -27,6 +28,13 @@
     name: "index",
     components: {
       HelloWorld
+    },
+    created: function () {
+      axios.get('http://localhost:3001').then(tasks => {
+        console.log(tasks)
+      }).catch(err => {
+        console.error(err)
+      })
     }
   }
 </script>
