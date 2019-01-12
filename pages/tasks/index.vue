@@ -30,11 +30,12 @@
       HelloWorld
     },
     created: function () {
+      /*
       axios.get('http://localhost:3001').then(tasks => {
         console.log(tasks)
       }).catch(err => {
         console.error(err)
-      })
+      })*/
     }
   }
 </script>
