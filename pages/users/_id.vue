@@ -25,6 +25,12 @@
 
 <script>
   export default {
+    head(){
+      return {
+        title: this.user.id
+      }
+    },
+
     async asyncData({route, app}) {
       const user = await app.$axios.$get(
         `https://qiita.com/api/v2/users/${route.params.id}`
