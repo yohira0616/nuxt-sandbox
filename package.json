@@ -5,7 +5,7 @@
   "author": "yukito ohira <yukito.sys.so@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "PORT=8080 nuxt -s",
+    "dev": "PORT=3000 nuxt -s",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
